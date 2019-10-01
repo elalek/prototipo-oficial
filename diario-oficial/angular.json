@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "diaro-oficial": {
+    "diario-oficial": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/diaro-oficial",
+            "outputPath": "dist/diario-oficial",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -62,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "diaro-oficial:build"
+            "browserTarget": "diario-oficial:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "diaro-oficial:build:production"
+              "browserTarget": "diario-oficial:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "diaro-oficial:build"
+            "browserTarget": "diario-oficial:build"
           }
         },
         "test": {
@@ -110,15 +110,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "diaro-oficial:serve"
+            "devServerTarget": "diario-oficial:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "diaro-oficial:serve:production"
+              "devServerTarget": "diario-oficial:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "diaro-oficial"
+  "defaultProject": "diario-oficial"
 }
